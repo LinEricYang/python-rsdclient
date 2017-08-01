@@ -12,17 +12,8 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-"""
-test_python-rsdclient
-----------------------------------
-
-Tests for `python-rsdclient` module.
-"""
-
-from python-rsdclient.tests import base
+import pbr.version
 
 
-class TestPython-rsdclient(base.TestCase):
-
-    def test_something(self):
-        pass
+__version__ = pbr.version.VersionInfo(
+    'python-rsdclient').version_string()
